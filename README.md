@@ -45,8 +45,3 @@ The Signal Sampling and Recovery Application is a powerful tool for visualizing 
 
 8. **Resizable User Interface:** Easily resize the application without compromising the user interface. The responsive design ensures a consistent and user-friendly experience.
 
-### Different Sampling Scenarios
-
-9. **Testing Synthetic Signals:** Prepare at least three testing synthetic signals that address different scenarios, exploiting problems or illustrating tricky features. One example is a mix of 2Hz and 6Hz sinusoidals, sampled with various frequencies to showcase different outcomes. Provide three additional examples for a comprehensive understanding.
-
-Explore the Signal Sampling and Recovery Application to gain insights into signal processing and the Nyquist rate. Analyze different scenarios, compose signals, and observe the impact of noise in real time. Have an interactive and educational experience with our versatile application!
