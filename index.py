@@ -108,8 +108,7 @@ class MainApp(QMainWindow, FORM_CLASS):
         # Set to a range suitable for your needs
         self.sampling_frequency_slider.setRange(0, 400)
         self.sampling_frequency_slider.setValue(0)  # Setting an initial value
-        self.sampling_frequency_slider.setSingleStep(
-            1)  # To jump in steps of 10 (1, 10, 20,...)
+        self.sampling_frequency_slider.setSingleStep(1)  
 
         self.freq_combobox.currentIndexChanged.connect(
             self.update_sampling_frequency_slider)
@@ -202,7 +201,6 @@ class MainApp(QMainWindow, FORM_CLASS):
             self.noisy = noisy_signal
             viewer.draw_signal(self.noisy)
 
-# mina
         self.signal_frequencies.append(frequency)
         self.max_freq = max(self.signal_frequencies)
 
@@ -306,13 +304,6 @@ class MainApp(QMainWindow, FORM_CLASS):
                 self.error_signal.axes.clear()
                 self.error_signal.draw()
 
-                # if len(sampled_signal) < 2:
-                #     # If less than two samples, clear the other plots and return
-                #     self.recovered_signal.axes.clear()
-                #     self.recovered_signal.draw()
-                #     self.error_signal.axes.clear()
-                #     self.error_signal.draw()
-                #     return
 
     def update_frequency_label(self):
         selected_index = self.freq_combobox.currentIndex()
